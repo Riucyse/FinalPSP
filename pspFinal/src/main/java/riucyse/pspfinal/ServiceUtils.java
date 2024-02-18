@@ -1,16 +1,27 @@
 package riucyse.pspfinal;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.StringJoiner;
 import java.util.zip.GZIPInputStream;
 
-
 public class ServiceUtils {
+    private static String token = null;
+
+    public static void setToken(String token) {
+        ServiceUtils.token = token;
+    }
+
+    public static void removeToken() {
+        ServiceUtils.token = null;
+    }
 
     // Get charset encoding (UTF-8, ISO,...)
-
     public static String getCharset(String contentType) {
         for (String param : contentType.replace(" ", "").split(";")) {
             if (param.startsWith("charset=")) {
@@ -31,16 +42,18 @@ public class ServiceUtils {
             conn.setConnectTimeout(15000 /* milliseconds */);
             conn.setRequestMethod(method);
 
-            conn.setRequestProperty("Host", "localhost");
+            //conn.setRequestProperty("Host", "localhost");
             conn.setRequestProperty("Connection", "keep-alive");
             conn.setRequestProperty("Accept", "application/json");
-            conn.setRequestProperty("Origin", "http://localhost");
             conn.setRequestProperty("Accept-Encoding", "gzip,deflate,sdch");
             conn.setRequestProperty("Accept-Language", "es-ES,es;q=0.8");
-            conn.setRequestProperty("Accept-Charset", "UTF-8"); 
-            conn.setRequestProperty("User-Agent", "Java");
-            
-            conn.setRequestProperty("X-Requested-With", "XMLHttpRequest");
+            conn.setRequestProperty("Accept-Charset", "UTF-8");
+            conn.setRequestProperty("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36");
+
+            // If set, send the authentication token
+            if(token != null) {
+                conn.setRequestProperty("Authorization", "Bearer " + token);
+            }
 
             if (data != null) {
                 conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
@@ -66,8 +79,8 @@ public class ServiceUtils {
 
                 String line;
                 while((line = bufInput.readLine()) != null) {
-			result.add(line);
-		}
+                    result.add(line);
+                }
             }
         } catch (IOException e) {
         } finally {

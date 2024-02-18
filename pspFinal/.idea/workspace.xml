@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d29cdeee-48a8-4998-97e6-2ca07bde4416" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/OutputRechazado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/Clases/OutputLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/ServiceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/ServiceUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/riucyse/pspfinal/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/riucyse/pspfinal/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/riucyse/pspfinal/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/riucyse/pspfinal/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/riucyse/pspfinal/register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,17 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/riucyse/DAM/Segundo/DesarrolloInterfaces/1Tri/Projectos/Examenes/T1/EjIntel",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/riucyse/DAM/Segundo/ProgramacionServiciosProcesos/1Tri/Proyectos/PracticaFinal/TrabajoTri1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="riucyse.pspfinal" />

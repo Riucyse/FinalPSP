@@ -1,13 +1,15 @@
-package riucyse.pspfinal;
+package riucyse.pspfinal.Clases;
 
 import com.google.gson.annotations.SerializedName;
 
-public class OutputRechazado {
-
+public class OutputRegister {
+    //error, result, access
     @SerializedName("access")
     public String access;
     @SerializedName("error")
     public String error;
+    @SerializedName("result")
+    public String result;
 
     public String getAccess() {
         return access;
@@ -25,7 +27,15 @@ public class OutputRechazado {
         this.error = error;
     }
 
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
     public String toString(){
-        return "Acceso " + this.access + "\nError " + this.error;
+        return "{\naccess: " + access + "\nresult: " + result + "\nerror: " + error + "\n}";
     }
 }
