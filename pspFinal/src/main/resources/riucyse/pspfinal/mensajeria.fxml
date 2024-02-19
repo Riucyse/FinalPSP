@@ -64,13 +64,13 @@
             <Button fx:id="botonRefrescarMensajes" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#PulsarRefrescar" text="Refresh" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS" />
          </children>
       </GridPane>
-      <TableView fx:id="tableviewMensajes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+      <TableView fx:id="tableviewMensajes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
         <columns>
-            <TableColumn fx:id="columnaTextoMensaje" prefWidth="305.0" text="Message" />
-            <TableColumn fx:id="columnaImagenMensaje" prefWidth="115.0" text="Image" />
-          <TableColumn fx:id="columnaFechaEnviadaMensaje" prefWidth="68.0" text="Sent" />
-          <TableColumn fx:id="columnaEnviador" prefWidth="95.0" text="From" />
-            <TableColumn fx:id="columnaFotoPerfilEnviador" prefWidth="116.0" text="Profile picture" />
+            <TableColumn fx:id="columnaTextoMensaje" minWidth="-1.0" prefWidth="305.0" text="Message" />
+            <TableColumn fx:id="columnaImagenMensaje" minWidth="-1.0" prefWidth="115.0" text="Image" />
+          <TableColumn fx:id="columnaFechaEnviadaMensaje" minWidth="-1.0" prefWidth="68.0" text="Sent" />
+          <TableColumn fx:id="columnaEnviador" minWidth="-1.0" prefWidth="95.0" text="From" />
+            <TableColumn fx:id="columnaFotoPerfilEnviador" minWidth="-1.0" prefWidth="116.0" text="Profile picture" />
         </columns>
       </TableView>
       <GridPane GridPane.rowIndex="2">
